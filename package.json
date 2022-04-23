@@ -1,0 +1,20 @@
+{
+  "name": "magicmirror",
+  "version": "1.0.0",
+  "description": "docker volume create mirror-vol\r docker build -t magic-mirror .\r docker run -v hello --name magic-mirror -dp 8080:80 magic-mirror\r docker exec -it magic-mirror sh",
+  "main": "index.js",
+  "scripts": {
+    "listener-start": "node Listener/index.js",
+    "mirror-start": "node Mirror/server.js",
+    "start": "concurrently --kill-others \"npm run listener-start\" \"npm run mirror-start\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mic": "^2.1.2",
+    "vosk": "^0.3.32"
+  },
+  "devDependencies": {
+    "concurrently": "^7.1.0"
+  }
+}

@@ -1,0 +1,4 @@
+{
+    "udpPort": 2234,
+    "udpAddress": "localhost"
+}
