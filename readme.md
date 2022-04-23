@@ -1,6 +1,8 @@
 # Relquired pre-installs
 ffmpeg
+
 sox (windows/osx)
+
 ALSA (linux)
 
 # After install 
@@ -11,6 +13,9 @@ call ```npm start``` from the top level directory to start
 
 ## Docker Build Stuff
 docker volume create mirror-vol
+
 docker build -t magic-mirror .
+
 docker run -v hello --name magic-mirror -dp 8080:80 magic-mirror
+
 docker exec -it magic-mirror sh
