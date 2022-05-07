@@ -1,0 +1,48 @@
+.app {
+    width: calc(100vw - 2rem);
+    height: calc(100vh - 2rem);
+    overflow: hidden;    
+    margin: 1rem;
+    position: relative;
+}
+
+.bgObj {
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background: radial-gradient(var(--primary-fg), transparent, transparent);
+    z-index: 1;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes :global(slideRound) {
+    0% {
+        top: 0%;
+        left: 0%;
+    }
+    25% {
+        top: 0;
+        left: calc(100% - 4rem);
+    }
+    50% {
+        top: calc(100% - 4rem);
+        left: calc(100% - 4rem);
+    }
+    75% {
+        top: calc(100% - 4rem);
+        left: 0%;
+    }
+    100% {
+        top: 0%;
+        left: 0%;
+    }
+}
+
+:global {     
+    .bgObj {
+        animation-name: slideRound;
+    }
+}
+

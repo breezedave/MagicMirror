@@ -1,0 +1,15 @@
+body {
+    --primary-bg: black;
+    --primary-fg: white;
+    font-size: 62.5%;
+    
+    background-color: var(--primary-bg);
+    color: var(--primary-fg);
+    width: calc(100vw - 2rem);
+    height: calc(100vh - 2rem);
+    border-radius: 1rem;
+    
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}

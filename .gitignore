@@ -2,3 +2,4 @@ node_modules/
 model/
 recordings/
 package-lock.json
+secrets.json

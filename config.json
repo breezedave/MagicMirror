@@ -2,5 +2,6 @@
     "udpPort": 2234,
     "udpAddress": "localhost",
     "serverPort": 3000,
-    "home": "Swansea, UK"
+    "home": "Swansea, UK",
+    "pictureDisplayPeriod": 12000
 }

@@ -1,9 +1,9 @@
 module.exports = {
     messageList: [
         ["color", /change (colour|color) to (?<value>.*)/],
-        ["emoji", /show me (a|an) (?<value>.*) (emoji|face)/],
-        ["weather", /show me the weather for (?<value>.*)/],
-        ["picture", /show me a picture of (?<value>.*)/],
-        ["map", /show me a map of (?<value>.*)/],
+        ["emoji", /(show|get) me (a|an) (?<value>.*) (emoji|face)/],
+        ["weather", /(show|get) me the weather for (?<value>.*)/],
+        ["picture", /(show|get) me (a picture|pictures) of (?<value>.*)/],
+        ["map", /(get|show) me a map of (?<value>.*)/],
     ]
 };
