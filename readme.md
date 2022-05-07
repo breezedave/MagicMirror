@@ -1,4 +1,4 @@
-# Relquired pre-installs
+# Required pre-installs
 ffmpeg
 
 sox (windows/osx)

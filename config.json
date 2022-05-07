@@ -1,4 +1,6 @@
 {
     "udpPort": 2234,
-    "udpAddress": "localhost"
+    "udpAddress": "localhost",
+    "serverPort": 3000,
+    "home": "Swansea, UK"
 }
